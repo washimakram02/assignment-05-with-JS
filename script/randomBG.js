@@ -7,5 +7,5 @@ document.getElementById("change-body-bg").addEventListener("click", function() {
 });
 
 document.getElementById('switch-to-blog').addEventListener('click',function(){
-    window.location.href = "AnswerBLog.html";
+    window.location.href = "./AnswerBLog.html";
 })

@@ -43,7 +43,7 @@ function createPara(value) {
     const minutes = String(now.getMinutes()).padStart(2, '0');
     const activityLog = document.getElementById("create-p-in-js");
     const newParagraph = document.createElement("p");
-    newParagraph.innerText = `You have Complete The Task ${value} at ${hours}:${minutes}`;
+    newParagraph.innerText = `You have Complete The Task ${value} at ${hours}:${minutes} O'clock`;
     newParagraph.classList.add("text-lg", "font-semibold", "mt-2", "text-blue-600", "bg-blue-100", "border-none", "rounded-xl", "p-2");
     activityLog.appendChild(newParagraph);
 }

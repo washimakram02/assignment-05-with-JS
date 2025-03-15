@@ -1,3 +1,5 @@
+let count =0;
+
 function btnManager(btn) {
     btn.classList.remove('bg-blue-600');
     btn.classList.add('bg-gray-500');
@@ -10,6 +12,10 @@ function btnManager(btn) {
 
     const decrementedValue = document.getElementById('decremented-value').innerText;
     document.getElementById('decremented-value').innerText = parseInt(decrementedValue) - 1;
+
+    count +=1;
+
+    console.log(count);
 
     alert(`Button ${btn.id} has been clicked!`);
 
@@ -33,6 +39,10 @@ function btnManager(btn) {
         createPara(value);
     } else {
         console.log('Unknown button clicked');
+    }
+
+    if(count === 6){
+        alert('You have already clicked all the button');
     }
 }
 

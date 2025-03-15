@@ -5,3 +5,7 @@ function getRandomHexColor() {
 document.getElementById("change-body-bg").addEventListener("click", function() {
     document.body.style.backgroundColor = getRandomHexColor();
 });
+
+document.getElementById('switch-to-blog').addEventListener('click',function(){
+    window.location.href = "AnswerBLog.html";
+})

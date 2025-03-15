@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body class="bg-[#F4F7FF] pt-6 px-36">
+    <header class="flex justify-between p-8 border-none rounded-xl bg-white mb-6">
+        <div class="flex">
+            <img src="assets/logo.png" alt="">
+            <h1 class="text-4xl flex items-center">Dev<span class="font-bold">Board</span></h1>
+        </div>
+        <div class="flex text-xl">
+            <button id="btn-back-desk" class="bg-blue-600 border-none rounded-lg px-4 py-2 text-white font-bold cursor-pointer">
+                Back to Desk
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="text-4xl font-semibold flex justify-center items-center p-10">Blogs</h1>
+        </section>
+
+        <section>
+            <div class="bg-white px-8 py-4 border-none rounded-xl mt-6">
+                <h1 class="text-3xl font-semibold">Question-1: What are the different ways to select an element in the DOM?</h1>
+            </div>
+            <div class="bg-white px-8 py-4 border-none rounded-xl mt-3">
+                <p class="text-lg">
+                    We can select elements using:
+                    <ul>
+                        <li><code>document.getElementById("id")</code> - Selects an element by its ID.</li>
+                        <li><code>document.getElementsByClassName("class")</code> - Selects elements by class name.</li>
+                        <li><code>document.getElementsByTagName("tag")</code> - Selects elements by tag name.</li>
+                        <li><code>document.querySelector("selector")</code> - Selects the first matching element.</li>
+                        <li><code>document.querySelectorAll("selector")</code> - Selects all matching elements.</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="bg-white px-8 py-4 border-none rounded-xl mt-6">
+                <h1 class="text-3xl font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent?</h1>
+            </div>
+            <div class="bg-white px-8 py-4 border-none rounded-xl mt-3">
+                <p class="text-lg">
+                    <strong>innerHTML</strong>: Returns or sets the HTML content of an element.<br>
+                    <strong>innerText</strong>: Returns or sets only the visible text (ignores hidden elements).<br>
+                    <strong>textContent</strong>: Returns or sets all text, including hidden elements.<br>
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="bg-white px-8 py-4 border-none rounded-xl mt-6">
+                <h1 class="text-3xl font-semibold">Question-3: What is event delegation in the DOM?</h1>
+            </div>
+            <div class="bg-white px-8 py-4 border-none rounded-xl mt-3">
+                <p class="text-lg">
+                    --------------------------------------------------------------------------------------------------------------------------
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="bg-white px-8 py-4 border-none rounded-xl mt-6">
+                <h1 class="text-3xl font-semibold">Question-4: What is event bubbling in the DOM?</h1>
+            </div>
+            <div class="bg-white px-8 py-4 border-none rounded-xl mt-3">
+                <p class="text-lg">
+                    Event bubbling is the process where an event triggered on a child element propagates up to its parent elements.
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="bg-white px-8 py-4 border-none rounded-xl mt-6">
+                <h1 class="text-3xl font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            </div>
+            <div class="bg-white px-8 py-4 border-none rounded-xl mt-3">
+                <p class="text-lg">
+                    <strong>Creating:</strong> <code>document.createElement("tag")</code><br>
+                    <strong>Adding:</strong> <code>parent.appendChild(element)</code> or <code>parent.insertBefore(element, reference)</code><br>
+                    <strong>Removing:</strong> <code>element.remove()</code> or <code>parent.removeChild(child)</code>
+                </p>
+            </div>
+        </section>
+        
+    </main>
+    <script src="switch-window.js"></script>
+</body>
+</html>

@@ -17,32 +17,36 @@ function btnManager(btn) {
 
     console.log(count);
 
-    alert(`Button ${btn.id} has been clicked!`);
-
     if (btn.id === 'btn-1') {
         const value = document.getElementById("fix-mobile").querySelector("p.text-xl").innerText;
         createPara(value);
+        alert(`${value} Task has been completed`);
     } else if (btn.id === 'btn-2') {
         const value = document.getElementById("dark-mode").querySelector("p.text-xl").innerText;
         createPara(value);
+        alert(`${value} Task has been completed`);
     } else if (btn.id === 'btn-3') {
         const value = document.getElementById("home-page").querySelector("p.text-xl").innerText;
         createPara(value);
+        alert(`${value} Task has been completed`);
     } else if (btn.id === 'btn-4') {
         const value = document.getElementById("new-emoji").querySelector("p.text-xl").innerText;
         createPara(value);
+        alert(`${value} Task has been completed`);
     } else if (btn.id === 'btn-5') {
         const value = document.getElementById("openAI-API").querySelector("p.text-xl").innerText;
         createPara(value);
+        alert(`${value} Task has been completed`);
     } else if (btn.id === 'btn-6') {
         const value = document.getElementById("job-improve").querySelector("p.text-xl").innerText;
         createPara(value);
+        alert(`${value} Task has been completed`);
     } else {
         console.log('Unknown button clicked');
     }
 
     if(count === 6){
-        alert('You have already clicked all the button');
+        alert('You have already completed all the Task');
     }
 }
 
